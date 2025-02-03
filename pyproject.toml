@@ -2,3 +2,10 @@
 requires = ["setuptools>=42"]
 build-backend = "setuptools.build_meta"
 
+
+[tool.codespell]
+# Ref: https://github.com/codespell-project/codespell#using-a-config-file
+skip = '.git*,*.pdf,*.svg'
+check-hidden = true
+# ignore-regex = ''
+# ignore-words-list = ''
