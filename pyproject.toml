@@ -5,7 +5,8 @@ build-backend = "setuptools.build_meta"
 
 [tool.codespell]
 # Ref: https://github.com/codespell-project/codespell#using-a-config-file
-skip = '.git*,*.pdf,*.svg'
+skip = '.git*,*.pdf,*.svg,query.csv'
 check-hidden = true
 # ignore-regex = ''
-# ignore-words-list = ''
+# Some names and variables which might be from external APIs etc
+ignore-words-list = 'vertexes'
