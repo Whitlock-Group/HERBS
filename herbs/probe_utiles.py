@@ -70,8 +70,8 @@ def line_fit(points):
     sort_order = np.argsort(points[:, 2])[::-1]
     points = points[sort_order, :]
     avg = np.mean(points, 0)
-    substracted = points - avg
-    u, s, vh = np.linalg.svd(substracted)
+    subtracted = points - avg
+    u, s, vh = np.linalg.svd(subtracted)
     direction = vh[0, :] / np.linalg.norm(vh[0, :])
     p1 = points[0, :]
     p2 = points[-1, :]
@@ -336,10 +336,10 @@ def group_labels(fine_label_mat, verbose=False):
         print("group mat nan index", np.where(np.isnan(group_mat)))
         print("group id label", group_id_label)
         print("group_mat")
-        indexs = np.arange(0, len(group_mat), 20)
-        for i in range(len(indexs) - 1):
-            print(group_mat[indexs[i] : indexs[i + 1]])
-        print(group_mat[indexs[-1] : len(group_mat)])
+        indexes = np.arange(0, len(group_mat), 20)
+        for i in range(len(indexes) - 1):
+            print(group_mat[indexes[i] : indexes[i + 1]])
+        print(group_mat[indexes[-1] : len(group_mat)])
         print(len(group_mat))
 
     return group_mat, group_id_label
@@ -621,10 +621,10 @@ def get_fine_label_matrix(column_vox, label_data, verbose=False):
 
     if verbose:
         # print out fine label matrix
-        indexs = np.arange(0, len(fine_label_mat), 20)
-        for i in range(len(indexs) - 1):
-            print(fine_label_mat[indexs[i] : indexs[i + 1]])
-        print(fine_label_mat[indexs[-1] : len(fine_label_mat)])
+        indexes = np.arange(0, len(fine_label_mat), 20)
+        for i in range(len(indexes) - 1):
+            print(fine_label_mat[indexes[i] : indexes[i + 1]])
+        print(fine_label_mat[indexes[-1] : len(fine_label_mat)])
 
     return fine_label_mat
 

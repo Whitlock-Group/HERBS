@@ -6,7 +6,7 @@ Locations and geometry of electrodes of Neuropixels 1.0 and 2.0 probes are pre-d
 <p style="font-size:120%; color:red">When ONLY atlas is loaded, the pre-surgery mode is ON.</p>
 <p style="font-size:120%; color:red">When BOTH atlas and histological images are loaded, the after-surgery mode is ON.</p>
 
-Therefore, if users would like to plan the coordinates before surgeries, the histological images shoule not be loaded.
+Therefore, if users would like to plan the coordinates before surgeries, the histological images should not be loaded.
 
 To work with probe related projects, 
 the most important button one needs to know is <b style="font-size:120%; color:blue">Probe Marker</b> button.
@@ -40,7 +40,7 @@ in the <b>Probe Type</b> combobox will turn on the single shank Neuropixel 2.0.
 
 To turn on the 4-shanks version, users need to switch <b>Multi-shanks Switch</b> button checked. 
 
-The probe is considered to be a 3D rigid object and eletrodes are on one surface of the probe. 
+The probe is considered to be a 3D rigid object and electrodes are on one surface of the probe. 
 When we clicked the trajectory of a probe, we assume the trajectory is the probe center.
 <p align="center">
 <img src="../../image/probe_related/probe.jpg" width="50%">

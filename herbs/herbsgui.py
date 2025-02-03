@@ -579,7 +579,7 @@ class HERBS(QMainWindow, FORM_Main):
         coronal_layout.addWidget(self.atlas_view.clut, 0, 1, 1, 1)
         coronal_layout.addWidget(self.atlas_view.cpage_ctrl, 1, 0, 1, 2)
 
-        # ------------------ sagital / image sagital
+        # ------------------ sagittal / image sagittal
         self.sagital_layout = QGridLayout(self.sagitalframe)
         self.sagital_layout.setSpacing(0)
         self.sagital_layout.setContentsMargins(0, 0, 0, 0)
@@ -595,7 +595,7 @@ class HERBS(QMainWindow, FORM_Main):
         horizontal_layout.addWidget(self.atlas_view.hlut, 0, 1, 1, 1)
         horizontal_layout.addWidget(self.atlas_view.hpage_ctrl, 1, 0, 1, 2)
 
-        # ------------------ sagital copy / atlas sagital
+        # ------------------ sagittal copy / atlas sagittal
         self.sagital_copy_layout = QGridLayout(self.sagitalcopyframe)
         self.sagital_copy_layout.setSpacing(0)
         self.sagital_copy_layout.setContentsMargins(0, 0, 0, 0)
@@ -6222,7 +6222,7 @@ class HERBS(QMainWindow, FORM_Main):
     # load multiple images
     def load_images(self):
         self.statusbar.showMessage(
-            "Selecte folder to load multiple images, files can not be .czi format ..."
+            "Select folder to load multiple images, files can not be .czi format ..."
         )
         images_folder = str(
             QFileDialog.getExistingDirectory(self, "Select Images Folder")

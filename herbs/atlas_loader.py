@@ -401,7 +401,7 @@ class AtlasLoader(object):
             self.msg = 'Please pre-process the raw data of your desire atlas.'
             self.success = False
         else:
-            # laod label info
+            # load label info
             try:
                 infile = open(pre_made_label_info_path, 'rb')
                 self.label_info = pickle.load(infile)
