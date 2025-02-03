@@ -141,7 +141,7 @@ class CustomerAtlasWorker(QObject):
             pickle.dump(label_info, handle, protocol=pickle.HIGHEST_PROTOCOL)
         self.progress.emit(9)
 
-        # laod atlas
+        # load atlas
         atlas_data, success = check_data_path_and_load(
             os.path.join(self.saving_folder, self.data_local)
         )
@@ -155,7 +155,7 @@ class CustomerAtlasWorker(QObject):
         if np.any(np.ravel(atlas_size) < self.factor):
             self.error_occur.emit("Factor can not be larger than atlas size.")
         self.progress.emit(14)
-        # laod segmentation data
+        # load segmentation data
         segmentation_data, success = check_data_path_and_load(
             os.path.join(self.saving_folder, self.segmentation_local)
         )
@@ -732,7 +732,7 @@ class AtlasProcessor(QDialog):
         dir_groups = self.group_maps[np.array(self.directions) - 1]
         if len(np.unique(dir_groups)) != 3:
             self.info_flag = False
-            self.process_info.setText("Axis directions can not duplicat.")
+            self.process_info.setText("Axis directions can not duplicate.")
             return
 
         msg = self.check_empty_file()

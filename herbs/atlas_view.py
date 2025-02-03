@@ -454,7 +454,7 @@ class AtlasView(QObject):
         coronal_wrap_layout.addWidget(self.crotation_ctrl.v_slider, 1, 2, 1, 1)
         coronal_wrap_layout.addWidget(self.crotation_ctrl.v_spinbox, 1, 3, 1, 1)
 
-        # sagital section control
+        # sagittal section control
         sagital_rotation_wrap = QGroupBox('Sagittal Section')
         sagital_rotation_wrap.setStyleSheet(rotation_gb_style)
         sagital_wrap_layout = QGridLayout(sagital_rotation_wrap)

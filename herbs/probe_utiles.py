@@ -70,8 +70,8 @@ def line_fit(points):
     sort_order = np.argsort(points[:, 2])[::-1]
     points = points[sort_order, :]
     avg = np.mean(points, 0)
-    substracted = points - avg
-    u, s, vh = np.linalg.svd(substracted)
+    subtracted = points - avg
+    u, s, vh = np.linalg.svd(subtracted)
     direction = vh[0, :] / np.linalg.norm(vh[0, :])
     p1 = points[0, :]
     p2 = points[-1, :]

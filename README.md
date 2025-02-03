@@ -52,7 +52,7 @@ When downloading an atlas other than the one you already have, please store it i
 
 - 3D visualisation in HERBS depends on OpenGL, if you face to the problem that no OpenGL is installed on your machine, please see (https://www.opengl.org) to download and install accordingly. 
 
-- If you use MacOS and face to the problem of ImportError states that "Unable to load OpenGL package". Please try to find the OpenGL package folder from where you install all python packages in your enviroment, and go to OpenGL's child-folder "platform", open "ctypesloader.py", and change line 
+- If you use MacOS and face to the problem of ImportError states that "Unable to load OpenGL package". Please try to find the OpenGL package folder from where you install all python packages in your environment, and go to OpenGL's child-folder "platform", open "ctypesloader.py", and change line 
 
 ```python
 fullName = util.find_library( name )
