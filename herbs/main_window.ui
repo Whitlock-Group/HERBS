@@ -715,7 +715,7 @@ selection-background-color: rgb(50, 50, 50);</string>
     <string>Crop</string>
    </property>
    <property name="toolTip">
-    <string>Crop off the area not slected</string>
+    <string>Crop off the area not selected</string>
    </property>
   </action>
   <action name="actionSwitch_Atlas">
@@ -776,7 +776,7 @@ selection-background-color: rgb(50, 50, 50);</string>
   </action>
   <action name="actionSagital_Window">
    <property name="text">
-    <string>Sagital Window</string>
+    <string>Sagittal Window</string>
    </property>
   </action>
   <action name="actionHorizontal_Window">
