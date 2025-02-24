@@ -1,6 +1,6 @@
 ## About Atlas through HERBS
 
-HERBS allows users to download Waxholm Rat altas and Allen Mouse atlas and process multiple volume brain atlases. Different atals has been developed based on different coordinates systems. In ohter words, the X-axis/Y-axis/Z-axis has different meaning and points different directions from atlas to atlas.
+HERBS allows users to download Waxholm Rat altas and Allen Mouse atlas and process multiple volume brain atlases. Different atals has been developed based on different coordinates systems. In other words, the X-axis/Y-axis/Z-axis has different meaning and points different directions from atlas to atlas.
 
 Besides the coordinates that atlases deployed, HERBS has its Internal coordinates also. In this page, I will brifely talk about the differeces in coordinates between popular atlases and HERBS internal.
 
